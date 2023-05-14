@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Portal</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="head">
+            Student Portal
+        </div>
+        <div class="data-container">
+            <div class="search-input">
+                <input id="input-searchdata" type="text" placeholder="Search">
+                <button id="search">Search</button>
+            </div>
+            <div class="buttons">
+                <button class="sort" id="sort-asc">Sort A<span class="material-symbols-outlined">arrow_forward</span>Z</button>
+                <button class="sort" id="sord-dsc">Sort Z<span class="material-symbols-outlined">arrow_forward</span>A</button>
+                <button class="sort" id="sort-marks">Sort By Marks</button>
+                <button class="sort" id="sort-pass">Sort By Passing</button>
+                <button class="sort" id="sort-class">Sort By Class</button>
+                <button class="sort" id="sort-gender">Sort By Gender</button>
+            </div>
+            <div class="table-data">
+                <table id="all">
+                    <thead>
+                        <tr>
+                            <td id="id" class="id">ID</td>
+                            <td id="name" class="name">Name</td>
+                            <td id="gender" class="data">Gender</td>
+                            <td id="class" class="data">Class</td>
+                            <td id="marks" class="data">Marks</td>
+                            <td id="passing" class="data">Passing</td>
+                            <td id="email" class="email">Email</td>
+                        </tr>
+                    </thead>
+                    <tbody id="addData">
+                        
+                    </tbody>
+                </table>
+                
+                <table id="female">
+                    <caption>Female Data</caption>
+                    <thead>
+                        <tr>
+                            <td id="id" class="id">ID</td>
+                            <td id="name" class="name">Name</td>
+                            <td id="gender" class="data">Gender</td>
+                            <td id="class" class="data">Class</td>
+                            <td id="marks" class="data">Marks</td>
+                            <td id="passing" class="data">Passing</td>
+                            <td id="email" class="email">Email</td>
+                        </tr>
+                    </thead>
+                    <tbody id="addData-female">
+                        
+                    </tbody>
+                </table>
+
+                <table id="male">
+                    <caption>Male Data</caption>
+                    <thead>
+                        <tr>
+                            <td id="id" class="id">ID</td>
+                            <td id="name" class="name">Name</td>
+                            <td id="gender" class="data">Gender</td>
+                            <td id="class" class="data">Class</td>
+                            <td id="marks" class="data">Marks</td>
+                            <td id="passing" class="data">Passing</td>
+                            <td id="email" class="email">Email</td>
+                        </tr>
+                    </thead>
+                    <tbody id="addData-male">
+                        
+                    </tbody>
+                </table>
+
+            </div>
+        </div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>
